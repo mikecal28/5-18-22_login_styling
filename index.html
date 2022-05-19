@@ -1,0 +1,83 @@
+<!-- 
+Build a Login Page with Basic HTML and CSS:
+
+Do your best to replicate this design:
+https://login-page-exercise.ryancurtis1.repl.co/
+
+You should have:
+ - A navbar with a background color
+   - Some text in the navbar (non-functional is fine)
+ - A page where a large image takes up the left half, and 
+   the login form is centered on the right
+ - The login form should include a large header, email field,
+   password field, and a submit button. Make this actually
+   submit to https://httpbin.org/post. Your fields should be 
+   the appropriate types, and required before submitting.
+ - Include 2 icons from fontawesome.
+ - Import at least 1 font from google fonts.
+ - Have a default font for the whole page, and then use a 
+   different font for your login header.
+
+Try your hand at styling the form elements, but don't spend to much time on that if you can't figure it out.
+
+Push to github and submit your link to me.
+
+HAVE FUN!!!!!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="navbar">
+        <a href="#">Home</a>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://en.wikipedia.org">Wikipedia</a>
+      </div>
+      <div id="navbar-link-separator-1"></div>
+      <div id="navbar-link-separator-2"></div>
+    </div>
+
+    <div class="hero-container">Hello</div>
+
+    <div class="login-container">
+      <div class="login-box">
+        Login:
+        <div class="login-content">
+          <form action="https://httpbin.org/post" method="post">
+            <label for="email"> <i class="fa-solid fa-at"></i></label>
+            <input class="input-form" type="text" name="email" autofocus />
+            <label for="password">
+              <i class="fa-solid fa-key"></i>
+            </label>
+            <input class="input-form" type="text" name="password" autofocus />
+            <button>SUBMIT</button>
+          </form>
+        </div>
+        <div id="login-form-underline-email"></div>
+        <div id="login-form-underline-password"></div>
+      </div>
+    </div>
+  </body>
+</html>

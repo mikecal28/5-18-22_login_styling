@@ -1,0 +1,137 @@
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+  margin: 0 0 0 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input[type="text"] {
+  width: 80%;
+  font-size: x-large;
+  background: transparent;
+  border: none;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color: white;
+  margin-bottom: 50px;
+}
+
+button {
+  background-color: #3a506b;
+  border: 1px;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.navbar-container {
+  background-color: #3a506b;
+  padding: 10px;
+}
+
+.navbar {
+  word-spacing: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #5bc0be;
+}
+
+#navbar-link-separator-1 {
+  width: 1px;
+  height: 28px;
+  position: absolute;
+  transform: translate(5000%, -80%);
+  background-color: #5bc0be;
+}
+
+#navbar-link-separator-2 {
+  width: 1px;
+  height: 28px;
+  position: absolute;
+  transform: translate(11600%, -80%);
+  background-color: #5bc0be;
+}
+
+.hero-container {
+  width: 50vw;
+  height: 100vh;
+  background: url(../assets/images/rina-kulevski-gcaMYcvCtR8-unsplash.jpg)
+    no-repeat center;
+  background-size: cover;
+  position: absolute;
+  transform: translateY(-3.5%);
+  z-index: -1;
+}
+
+.login-container {
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  transform: translate(100%);
+  background-color: #5bc0be;
+}
+
+#login-form-underline-email {
+  width: 60%;
+  height: 3px;
+  position: absolute;
+  transform: translate(25%, -24.5vh);
+  background-color: #5bc0be;
+}
+
+#login-form-underline-password {
+  width: 60%;
+  height: 3px;
+  position: absolute;
+  transform: translate(25%, -12vh);
+  background-color: #5bc0be;
+}
+
+.login-box {
+  position: relative;
+  transform: translate(45%, 35%);
+  border: 10px solid #1c2541;
+  border-radius: 60px;
+  width: 20vw;
+  height: 45vh;
+  background-color: #1c2541;
+  text-align: center;
+  padding: 5%;
+  color: white;
+  font-family: "Archivo", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.login-content {
+  word-spacing: 10px;
+  margin-top: 50px;
+  font-family: inherit;
+  font-size: 2rem;
+  transform: translate(0%);
+}
